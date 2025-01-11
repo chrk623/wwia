@@ -1,0 +1,22 @@
+{
+  "extends": ["eslint:recommended", "plugin:import/recommended"],
+  "plugins": ["import"],
+  "env": {
+    "node": true,
+    "es2020": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js"]
+      }
+    }
+  },
+  "rules": {
+    "import/extensions": ["error", "always"]
+  }
+}

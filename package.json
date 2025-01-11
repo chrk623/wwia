@@ -1,0 +1,44 @@
+{
+  "name": "wwia",
+  "version": "1.0.1",
+  "description": "A collection of useful functions and templates, organized for easy reuse and integration.",
+  "homepage": "https://github.com/chrk623/wwia",
+  "bugs": {
+    "url": "https://github.com/chrk623/wwia/issues"
+  },
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "wwia": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x dist/cli.js",
+    "dev": "tsc -w",
+    "test:cli": "pnpm build && pnpm link --global",
+    "test:build": "rm -f wwia-*.tgz && pnpm build && pnpm pack",
+    "unlink": "pnpm unlink --global",
+    "gen": "sh md-list-gen.sh",
+    "prepub": "pnpm gen && pnpm build"
+  },
+  "keywords": [
+    "template",
+    "utils",
+    "generator",
+    "typescript"
+  ],
+  "author": "Charco Hui",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "fuse.js": "^7.0.0",
+    "commander": "^13.0.0"
+  }
+}

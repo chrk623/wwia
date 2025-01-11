@@ -1,0 +1,23 @@
+{
+  "name": "js-base-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node src/index.js",
+    "dev:watch": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.18.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
