@@ -21,26 +21,6 @@ npx wwia
 
 ## Usage
 
-```bash
-# init a ts project
-npx wwia init ts-base
-# or js
-npx wwia init js-base
-
-# to add a single file/function
-npx wwia add dt unix-to-date
-# to add the whole datetime collection
-npx wwia add dt
-
-# list everything
-npx wwia ls
-
-# fuzzy search unix related files
-npx wwia search unix
-```
-
-## Usage
-
 ### Add utility functions
 
 ```bash
